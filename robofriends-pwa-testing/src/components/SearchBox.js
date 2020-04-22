@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 const SearchBox = ({ searchfield, searchChange }) => {
-  console.log('SearchBox');
+  console.log("SearchBox");
   return (
     <div className='pa2'>
       <input
-        aria-label="Search"
+        aria-label='Search Robots'
         className='pa3 ba b--green bg-lightest-blue'
         type='search'
         placeholder='search robots'
@@ -13,6 +13,6 @@ const SearchBox = ({ searchfield, searchChange }) => {
       />
     </div>
   );
-}
+};
 
 export default SearchBox;
