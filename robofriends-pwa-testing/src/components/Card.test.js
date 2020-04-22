@@ -1,10 +1,15 @@
-import Enzyme from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import { shallow } from "enzyme";
 import React from "react";
-import Card from "./Card";
+import CardList from "./CardList";
 
-Enzyme.configure({ adapter: new Adapter() });
-
-it("expect to render Card component", () => {
-  expect(Enzyme.shallow(<Card />)).toMatchSnapshot();
+it("expect to render Card List component", () => {
+  const mockRobots = [
+    {
+      id: 1,
+      name: "John Snow",
+      username: "John John",
+      email: "john@gmail.com",
+    },
+  ];
+  expect(shallow(<CardList robots={mockRobots} />)).toMatchSnapshot();
 });
