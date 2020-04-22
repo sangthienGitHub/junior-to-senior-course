@@ -5,7 +5,8 @@ const getPeoplePromise = (fetch) => {
     .then((response) => response.json())
     .then((data) => {
       return {
-        results: data,
+        count: data.count,
+        results: data.results,
       };
     });
 };
@@ -14,7 +15,8 @@ const getPeople = async (fetch) => {
   const getRequest = await fetch("https://swapi.dev/api/people");
   const data = await getRequest.json();
   return {
-    results: data,
+    count: data.count,
+    results: data.results,
   };
 };
 
