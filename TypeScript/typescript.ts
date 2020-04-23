@@ -57,3 +57,44 @@ let sing = (): void => {
 let error = (): never => {
   throw Error("ooops");
 };
+
+//interface
+interface RobotArmy {
+  count: number;
+  type: string;
+  magic: string;
+}
+
+let fightRobotArmy = (robots: RobotArmy) => {
+  console.log("FIGHT");
+};
+
+//Type Assertion
+interface CatArmy {
+  count: number;
+  type: string;
+  magic: string;
+}
+
+let dog = {} as CatArmy;
+dog.count;
+
+//Function
+let fightRobotArmy3 = (robots: RobotArmy): void => {
+  console.log("FIGHT");
+};
+
+//class
+class Animal {
+  sing: string = "Good Morning";
+  constructor(sound: string) {
+    this.sing = sound;
+  }
+
+  greet() {
+    return `Hello ${this.sing}`;
+  }
+}
+
+let lion = new Animal("RAAAWWWR");
+lion.greet();

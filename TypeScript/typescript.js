@@ -46,3 +46,25 @@ var sing = function () {
 var error = function () {
     throw Error("ooops");
 };
+var fightRobotArmy = function (robots) {
+    console.log("FIGHT");
+};
+var dog = {};
+dog.count;
+//Function
+var fightRobotArmy3 = function (robots) {
+    console.log("FIGHT");
+};
+//class
+var Animal = /** @class */ (function () {
+    function Animal(sound) {
+        this.sing = "Good Morning";
+        this.sing = sound;
+    }
+    Animal.prototype.greet = function () {
+        return "Hello " + this.sing;
+    };
+    return Animal;
+}());
+var lion = new Animal("RAAAWWWR");
+lion.greet();
