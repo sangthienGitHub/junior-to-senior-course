@@ -68,3 +68,5 @@ var Animal = /** @class */ (function () {
 }());
 var lion = new Animal("RAAAWWWR");
 lion.greet();
+//Union --> a variable can be in different type combined with |
+var confused = true;

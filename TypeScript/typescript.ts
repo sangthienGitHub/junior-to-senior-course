@@ -98,3 +98,6 @@ class Animal {
 
 let lion = new Animal("RAAAWWWR");
 lion.greet();
+
+//Union --> a variable can be in different type combined with |
+let confused: string | number | boolean = true;
